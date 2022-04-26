@@ -10,11 +10,16 @@ class LaiGenUserCommand(sublime_plugin.TextCommand):
 		first_names = ["李", "王", "张", "刘"]
 		last_names = ["建国", "海军", "强", "伟", "杰"]
 		name = first_names[random.randint(0, 3)] + last_names[random.randint(0, 4)]
+		number = identity.IdNumber.generate_id()
+
+		idnum_obj = identity.IdNumber(number)
 
 		data = [
-			"\n" + identity.IdNumber.generate_id(),
+			number,
 			name,
-			'1' + str(random.randint(1000000000, 9999999999))
+			'1' + str(random.randint(1000000000, 9999999999)),
+			idnum_obj.get_birthday(),
+			idnum_obj.get_area_name()
 		]
 
 		self.insert(edit, regions, "\n".join(data))
