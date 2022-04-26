@@ -1,0 +1,6 @@
+[
+	 {
+        "caption": "lai: 生成虚拟中国身份信息(lai_gen_user)",
+        "command": "lai_gen_user"
+    }
+]
