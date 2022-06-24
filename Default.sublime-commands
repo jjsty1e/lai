@@ -1,6 +1,18 @@
 [
-	 {
-        "caption": "lai: 生成虚拟中国身份信息(lai_gen_user)",
-        "command": "lai_gen_user"
-    }
+  {
+    "caption": "Lai: 生成虚拟中国身份信息(lai_gen_user)",
+    "command": "lai_gen_user"
+  },
+  {
+    "caption": "Lai: 时间戳转日期",
+    "command": "lai_timestamp_to_datetime"
+  },
+  {
+    "caption": "Lai: 日期转时间戳",
+    "command": "lai_datetime_to_timestamp"
+  },
+  {
+    "caption": "Lai: 执行Py代码",
+    "command": "lai_exec"
+  }
 ]
